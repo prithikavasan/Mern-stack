@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: rgb(1, 1, 41);
+            color: white;
+            height: 350px;
+            padding: 0 50px;
+        }
+        ul{
+            list-style: none;
+            color: white;
+            display: flex;
+            gap:20px;
+            padding:0;   
+        }
+        li:first-child{
+            
+            margin-right:auto;
+            padding-left: 31px;
+            margin-top: 30px;
+        }
+        li{
+            margin-top: 30px;
+            margin-left:20px;
+        }
+        .text h1{
+            text-align: left;
+            width: 320px;
+            margin-left: 50px;
+            margin-top: 75px;
+        }
+        .text p{
+            padding: 0px;
+             margin-left: 50px;
+              width: 400px;
+        }
+       .image1{
+        float: right;
+        width: 350px;
+        height: 150px;
+        margin-top: -197px;
+        margin-right: 60px; 
+       }
+       .text button{
+        margin-left:50px;
+        background-color: rgb(11, 35, 253);
+        margin-top: 0px;
+        border-style: none;
+        width: 70px;
+        height: 30px;
+        color: white;
+        border-radius: 5px;
+       }
+       .center{
+        text-align: center;
+       }
+       .images{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        
+       
+       }
+       .item img{
+        border: 3px solid rgb(11, 35, 253);
+        border-radius: 7px;
+       }
+       .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 150px;
+       }
+       .itext{
+        margin: 5px;
+        font-size: 14px;
+       }
+       .main{
+        display: flex;
+        align-items: center;
+        background-color: rgb(176, 176, 176);
+        justify-content: center;
+        margin-top: 50px;
+       }
+       .quote{
+        
+        margin:50px;
+        padding: 20px;
+       }
+        blockquote{
+        margin-top: 10px;
+        font-size: 17px;
+        width: 417px;
+       }
+       .author{
+        
+        text-align: right;
+       }
+       .box{
+        background-color: rgb(11, 35, 253);
+        margin-top: 70px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 60px;
+        border-radius: 5px;
+       }
+       .blue{
+        color: white;
+        padding: 30px;
+        display: flex;
+       }
+       .last{
+        margin: 50px;
+        padding-left: 50px;
+       }
+       .but{
+        background-color: rgb(11, 35, 253);
+        border: 2px solid white;
+        color: white;
+        border-radius: 7px;
+        height: 30px;
+        width: 100px;
+        margin-left: 120px;
+       }
+    .copy{
+        background-color: rgb(1, 1, 41);
+        color: white;
+        height: 85px;
+        text-align: center;
+       }
+       .copy footer{
+       padding-top:30px ;
+
+       }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <nav>
+            <ul>
+            <li>Header logo</li>
+            <li> header link one</li>
+            <li>header link two</li>
+            <li>header link three</li>
+            </ul>
+        </nav>
+        
+    </div>
+    <div class="text">
+        <h1>This website is awesome</h1>
+        <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+        <button>Sign up</button>
+    </div>
+    <image class="image1" src="flower1.jpg" alt="flowers"></image>
+</div>
+    <div class="center">
+        <h2>Some random information.</h2>
+        <div class="images">
+            <div class="item">
+            <image src="flower2.jpg" height="120px" width="120px"></image>
+            <p class="itext">this is some subtext under an illustration or image</p>
+            </div>
+            <div class="item">
+            <image src="flower3.jpg" height="120px" width="120px"></image>
+            <p class="itext">this is some subtext under an illustration or image</p>
+            </div>
+            <div class="item">
+            <image src="flower4.jpg" height="120px" width="120px"></image>
+            <p class="itext">this is some subtext under an illustration or image</p>
+            </div>
+            <div class="item">
+            <image src="flower5.jpg" height="120px" width="120px"></>
+            <p class="itext">this is some subtext under an illustration or image</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+    <div class="quote">
+        <blockquote><i>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice</i>
+        </blockquote> 
+        <p class="author"> <b>-Thor, God of Thunder</b></p>
+    </div>
+    </div>
+    <div class="box">
+        <div class="blue">
+            <div>
+            <h2>Call to action! It's time!</h2>
+            <p>Sign up for our product by clicking that button right over there!</p>
+            </div>
+            <div class="last">
+            <button class="but">Sign up</button>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+    <footer>Copyright @ The Odin Project 2021</footer>
+    </div>
+ 
+</body>
+</html>
