@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            font-family: sans-serif;
+        }
+        .navigation{
+            width:100%;
+            background:#ed5431 ;
+            padding :10px;
+            text-align: center;
+            color:white;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        nav a:hover{
+            background-color: #ee3810;
+        }
+        .imagePart{
+            background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092')no-repeat center center/cover;
+            padding:100px;
+            text-align: center;
+            color: white;
+        }
+        button{
+            background-color: white;
+            color: #ed5431;
+            border-radius: 5px;
+            border: 1px solid white;
+            box-shadow:  0 0 10px rgba(0, 0, 0, 0.148);
+            padding:10px;
+            font-weight: bold;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        button:hover{
+            background-color: rgb(249, 239, 228);
+        }
+        .lastPart{
+            text-align: center;
+            padding: 30px;
+        }
+        footer{
+            width:100%;
+            background-color: #ed5431;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 768px) {
+    .navigation h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .imagePart {
+        padding: 50px 20px;
+    }
+
+    .imagePart h2 {
+        font-size: 20px;
+    }
+
+    .imagePart p {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    .lastPart {
+        padding: 20px 10px;
+    }
+
+    .lastPart h3 {
+        font-size: 18px;
+    }
+
+    .lastPart p {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <h1>FoodieBite</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About</a>
+            <a href="#">contact</a>
+        </nav>
+    </div>
+    <div class="imagePart">
+        <h2><strong>Delicious Food, Delivered Fast!</strong></h2>
+        <p>Order your favourite meals from the best restaurant near you.</p>
+        <button type="submit">Order Now</button>
+    </div>
+    <div class="lastPart">
+        <h3>Fast Delivery</h3>
+        <p>We deliver in under 30 minutes!</p>
+        <h3>Fresh Ingredients</h3>
+        <p>We partner with trusted restaurants only.</p>
+        <h3>24/7 Support</h3>
+        <p>We’re here to help anytime.</p>
+    </div>
+    <footer>
+        © 2025 FoodieBite. All rights reserved.
+    </footer>
+</body>
+</html>

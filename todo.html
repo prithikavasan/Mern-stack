@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            
+            height: 100vh;
+        }
+        input{
+            height: 30px;
+            width: 250px;
+            padding: 5px;
+        }
+        .btn{
+            height: 30px;
+            width: 70px;
+            background-color: rgb(27, 235, 27);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(13, 192, 13);
+        }
+        li{
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            cursor: pointer;
+        }
+        .done{
+            text-decoration: line-through;
+            color: grey;
+            cursor: pointer;
+        }
+        button{
+            height: 30px;
+            width: 100px;
+            background-color: rgb(241, 26, 26);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 7px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>To-Do List</h3>
+    <input for="text" id="taskInput" placeholder="Enter a task">
+    <button class="btn" onclick = "addTask()" >Add</button>
+    <ul id = "taskList"></ul>
+    <script>
+        function addTask(){
+            let taskInput = document.getElementById("taskInput");
+            let taskText = taskInput.value.trim();
+            if(taskText==="")return;
+
+            let li = document.createElement("li");
+            li.textContent = taskText;
+
+            li.onclick = function(){
+                li.classList.toggle("done");
+            };
+
+            let delBtn = document.createElement("button");
+            delBtn.textContent = "Delete Task";
+            delBtn.onclick = function(){
+                li.remove();
+            };
+            li.appendChild(delBtn);
+            document.getElementById("taskList").appendChild(li);
+            taskInput.value = "";
+        }
+    </script>
+</body>
+</html>
