@@ -6,6 +6,8 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
+import State from "./Hooks/State";
+import LinkAndDislike from "./Hooks/LinkAndDislike";
 
 const App = () => {
   return (
@@ -16,11 +18,15 @@ const App = () => {
       <Route path="/about" Component={About}/>
       <Route path="/services" Component={Services}/>
       <Route path="/contact" Component={Contact}/>
+      <Route path="/state" element={<State/>}></Route>
     </Routes>
 
       <User name="Prithika" department="IT" 
       skills={["Java","C","HTML","Css","JS"]}/>
       <Arr food={["Noodles","Briyani"]}/>
+      <State/>
+      <LinkAndDislike/>
+      <Contact/>
      </>
 
   )
